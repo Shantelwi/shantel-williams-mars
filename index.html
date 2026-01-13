@@ -1,34 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shantel's Portfolio</title>
-</head>
-<body>
-    <h1>Shantel Williams</h1>
+    <link href="CSS/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/772edd58e1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="title-name">Shantel Williams</h1>
     <section id="About">
-        <h2>About</h2>
-        <img src="/workspaces/shantel-williams-mars/images/profile_picture.jpg" alt="profile_picture">
-        <p>I love to code. I'm excited to learn new things on this journey of coding!</p>
+      <h2 class="info-title">About</h2>
+      <img src="/images/profile_picture.jpg" alt="profile_picture" />
+      <p>
+        Greetings! I'm Shantel, a software developer with a passion for the
+        automotive, entertainment, fishing, and gaming industries. With six
+        years of experience in the automotive sector, I decided to make a career
+        change after realizing that software development aligns more closely
+        with my long-term aspirations. My journey into the world of software
+        development began just a year ago when I was introduced to it. Since
+        then, I have immersed myself in various programming languages, including
+        Python, JavaScript (ES6, Node.js), C#, HTML5, CSS, and SQL. Through
+        self-guided learning, I started with follow-along tutorials on YouTube,
+        honing my skills and expanding my knowledge base. Motivated by my
+        newfound interest, I joined a coding bootcamp to further enhance my
+        abilities and gain a holistic understanding of full-stack software
+        engineering. Currently, I am focused on Full Stack development, while
+        also exploring iOS development and UI/UX design. As a fast learner and
+        technology enthusiast, I am driven by challenging problems that foster
+        personal growth and help me achieve my goals. I pride myself on being a
+        dedicated team player who values effective communication and
+        consistently strives for results. I am excited to leverage my diverse
+        background and skills to contribute to innovative software solutions in
+        collaboration with like-minded professionals. With a strong foundation
+        in the automotive industry and a newfound passion for software
+        development, I am ready to embark on this transformative journey and
+        make a lasting impact in the world of technology.
+      </p>
     </section>
 
     <section id="Experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>I've completed a coding bootcamp prior to this learning experience.</li>
-            <li>I attempted to create a wedding invitation webpage</li>
-            <li>I've made a tech portfolio. Hoping to add some more intricate projects in there.</li>
-            <li>I have imposter syndrome.</li>
-        </ul>
+      <h2 class="info-title">Experience</h2>
+      <ul class="experience-list">
+        <div class="first-row">
+
+            <li class="exp-1">
+              <h3>Wedding Invite website</h3>
+              This project is a wedding e-Vite that lets the people who are invited
+              rsvp or decline the invite and the user gets notified with an email
+              using node mailer. Using react, html and CSS. I was able to make
+              this web application. Also, viewers are able to go to the gift
+              registries by clicking on the links and will be directed to the
+              respected store they clicked on. I had a hard time getting the
+              emails to send but with the help or google and stack overflow I was
+              able to get the emails and notifications working. This was a tricky
+              but fun application that can be used in real life situations, and I am
+              proud of myself with this project.
+            </li>
+            <li class="exp-2">
+              <h3>Wizarding World of Harry Potter Spells Generator</h3>
+              This is a website that generates different spells from the wizarding
+              world of harry potter using integrated api's. Utilized Javascript to
+              create the function of the generator. Integrated the harry potter
+              api spells to get all of the different spells. Used fetch to grab
+              the spells and shuffle them. Employed html and css to create the
+              page and different fonts.
+            </li>
+        </div>
+
+        <div class="sec-row">
+
+            <li class="exp-3">
+              <h3>A Blog website to enter posts of all things Marvel.</h3>
+            Used
+              MongoDB for the database to enable CRUD operations (create, update,
+              read, and delete entries) for users. Implemented Express to provide
+              server-side logic [for efficient routing and data management].
+              Conducted thorough testing of routes and APIs using postman
+              application. Utilized the React framework for quick rendering [and
+              enhanced user experience]. Incorporated material-Ui to design buttons
+              and other interactive features.
+            </li>
+            <li class="exp-4">
+              <h3>Calorie Counter website inspired by MyFitnessPal</h3>
+              Designed the wireframe and workflow using Balsamiq for organization.
+              Employed Flask framework for fast implementation of additional
+              features using Jinja2 templates including user management, entry
+              tracking and dynamic messages. Implemented back-end validations to
+              verify user input and maintain data consistency for users to create,
+              read, update and delete entries. Successfully deployed with GitHub
+              repository using AWS(EC2).
+            </li>
+        </div>
+      </ul>
     </section>
 
     <section id="Cennect">
-        <h2>Connect</h2>
-        <ul>
-            <li> <a href="https://github.com/Shantelwi">GitHub</a> </li>
-            <li> <a href="www.linkedin.com/in/shantel-williams-b5549423b">LinkedIn</a> </li>
-        </ul>
+      <h2 class="info-title">Connect</h2>
+      <ul class="social">
+        <li>
+          <a href="https://github.com/Shantelwi"
+            >GitHub <i class="fa-brands fa-github fa-xl fa-bounce"></i
+          ></a>
+        </li>
+
+        <li>
+          <a href="www.linkedin.com/in/shantel-williams-b5549423b"
+            >LinkedIn <i class="fa-brands fa-linkedin fa-xl fa-bounce"></i
+          ></a>
+        </li>
+      </ul>
     </section>
-</body>
+  </body>
 </html>

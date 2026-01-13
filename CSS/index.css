@@ -1,0 +1,85 @@
+body{
+    background-color: darkkhaki;
+    color: #f4f4f4;
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.title-name{
+    text-align: center;
+    color: seagreen;
+    font-size: 85px;
+}
+
+img{
+    width: 150px;
+    height: 200px;
+}
+
+p{
+    font-size: 25px;
+}
+
+.info-title{
+    text-decoration: underline;
+    color:darkcyan;
+    font-size: 45px;
+}
+
+.social{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: darkslategrey;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h3{
+    color: seagreen;
+    text-decoration: underline;
+}
+
+li{
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.experience-list{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 40px;
+}
+
+.exp-1{
+    background-color: rgba(255, 0, 0, 0.3);
+    text-align: center;
+}
+
+.exp-2{
+    background-color: rgba(0, 0, 255, 0.3);
+    text-align: center;
+}
+
+.exp-3{
+    background-color: rgba(0, 100, 0, 0.3);
+    text-align: center;
+}
+
+.exp-4{
+    background-color: rgba(255, 105, 180, 0.3);
+    text-align: center;
+}
+
+i{
+    color: black;
+}
