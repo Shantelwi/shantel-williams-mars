@@ -1,6 +1,14 @@
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px);
+    }
+  } 
+  
 body{
-    background-color: darkkhaki;
-    color: #f4f4f4;
+    background-color: rgb(255, 253, 219);
     font-family: "Story Script", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -12,15 +20,17 @@ body{
     text-align: center;
     color: seagreen;
     font-size: 85px;
+    text-shadow: 0 0 30px rgb(0, 239, 0);
+    animation: bounce 1s infinite ease-in-out;
 }
 
 img{
-    width: 150px;
-    height: 200px;
+    width: 160px;
 }
 
 p{
     font-size: 25px;
+    margin: 20px;
 }
 
 .info-title{
