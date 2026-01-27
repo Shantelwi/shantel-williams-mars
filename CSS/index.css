@@ -14,6 +14,13 @@ body{
     font-style: normal;
     box-sizing: border-box;
     padding: 20px;
+    margin: 0 auto;
+}
+
+nav{
+    position: sticky;
+    text-align: center;
+    font-size: 30px;
 }
 
 .title-name{
@@ -25,11 +32,12 @@ body{
 }
 
 img{
-    width: 160px;
+    width: 200px;
+    margin-top: 20px;
 }
 
 p{
-    font-size: 25px;
+    font-size: 20px;
     margin: 20px;
 }
 
@@ -58,43 +66,20 @@ h3{
     text-decoration: underline;
 }
 
-li{
-    list-style-type: none;
-    font-size: 25px;
-}
-
 .experience-list{
+    font-size: 20px;
     display: flex;
-    justify-content: center;
-    margin: 50px 50px 15px 15px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.exp-1{
-    background-color: rgba(255, 0, 0, 0.3);
-    text-align: center;
-    padding: 15px;
-    margin: 25px;
+.exp-1, .exp-2, .exp-3, .exp-4, .exp-5, .exp-6, .exp-7, .exp-8{
+    width: 500px;
 }
 
-.exp-2{
-    background-color: rgba(6, 247, 255, 0.123);
-    text-align: center;
-    padding: 15px;
-    margin: 25px;
-}
-
-.exp-3{
-    background-color: rgba(0, 100, 0, 0.3);
-    text-align: center;
-    padding: 15px;
-    margin: 25px;
-}
-
-.exp-4{
-    background-color: rgba(255, 105, 180, 0.3);
-    text-align: center;
-    padding: 15px;
-    margin: 25px;
+li{
+    list-style-type:none;
+    font-size: 20px;
 }
 
 i{
