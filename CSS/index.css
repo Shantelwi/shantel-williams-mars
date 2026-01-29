@@ -17,6 +17,11 @@ body{
     background-color: #111828;
 }
 
+main{
+    width: 690px;
+    margin: 0 auto;
+}
+
 .nav-left{
     display: flex;
     margin-top: 25px;
@@ -61,6 +66,7 @@ p{
 }
 
 .info-title{
+    text-align: center;
     text-decoration: underline;
     color:rgb(255, 254, 254);
     font-size: 35px;
@@ -96,6 +102,10 @@ h3{
 
 .exp-1, .exp-2, .exp-3, .exp-4, .exp-5, .exp-6, .exp-7, .exp-8{
     width: 500px;
+}
+
+.connect-msg{
+    text-align: center;
 }
 
 li{
