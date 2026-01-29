@@ -6,7 +6,25 @@
       transform: translateY(-25px);
     }
   } 
+
+@media screen and (min-width: 1281px) {
+    
+  }
   
+@media screen and (min-width: 400px) {
+    main{
+        margin: 0 auto;
+    }
+    
+    
+  }
+
+@media screen and (min-width: 1481px) {
+    main{
+        margin: 0 auto;
+    }
+}
+
 body{
     font-family: "Story Script", sans-serif;
     font-weight: 400;
@@ -18,8 +36,9 @@ body{
 }
 
 main{
-    width: 690px;
+    width: 95%;
     margin: 0 auto;
+
 }
 
 .nav-left{
@@ -29,7 +48,7 @@ main{
 
 img{
     width: 100px;
-    height: 105px;
+    height: 120px;
     border-radius: 50px;
 }
 
@@ -111,6 +130,7 @@ h3{
 li{
     list-style-type:none;
     font-size: 20px;
+    margin: 0 auto;
 }
 
 i{
