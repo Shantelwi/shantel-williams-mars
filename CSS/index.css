@@ -8,43 +8,63 @@
   } 
   
 body{
-    background-color: rgb(255, 253, 219);
     font-family: "Story Script", sans-serif;
     font-weight: 400;
     font-style: normal;
     box-sizing: border-box;
-    padding: 20px;
     margin: 0 auto;
+    border: 10px solid black;
+    background-color: #111828;
+}
+
+.nav-left{
+    display: flex;
+    margin-top: 25px;
+}
+
+img{
+    width: 100px;
+    height: 105px;
+    border-radius: 50px;
+}
+
+
+.title-name{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-shadow: 0 0 30px rgb(3, 255, 61);
+    animation: bounce 1s infinite ease-in-out;
+    margin-left: 10px;
 }
 
 nav{
     position: sticky;
-    text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #202938;
+    padding: 15px;
 }
 
-.title-name{
-    text-align: center;
-    color: seagreen;
-    font-size: 85px;
-    text-shadow: 0 0 30px rgb(0, 239, 0);
-    animation: bounce 1s infinite ease-in-out;
+.nav-list{
+    color: #75848b;
 }
 
-img{
-    width: 200px;
-    margin-top: 20px;
+.nav-right{
+    margin-top: 55px;
 }
 
 p{
     font-size: 20px;
     margin: 20px;
+    color: #75848b;
 }
 
 .info-title{
     text-decoration: underline;
-    color:darkcyan;
-    font-size: 45px;
+    color:rgb(255, 254, 254);
+    font-size: 35px;
+    padding: 25px;
 }
 
 .social{
@@ -54,7 +74,7 @@ p{
 a{
     text-decoration: none;
     margin-right: 50px;
-    color: darkslategrey;
+    color: rgb(255, 255, 255);
 }
 
 a:hover{
@@ -62,7 +82,7 @@ a:hover{
 }
 
 h3{
-    color: seagreen;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
@@ -70,6 +90,7 @@ h3{
     font-size: 20px;
     display: flex;
     text-align: center;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -83,5 +104,5 @@ li{
 }
 
 i{
-    color: black;
+    color: rgb(109, 109, 109);
 }
