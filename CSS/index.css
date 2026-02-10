@@ -33,6 +33,11 @@
     font: .8rem;
     width: 100%;
   }
+
+  .skillsList{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -41,6 +46,11 @@
   }
 
   .experience-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skillsList{
     display: flex;
     flex-wrap: wrap;
   }
@@ -167,4 +177,20 @@ li {
 
 i {
   color: rgb(109, 109, 109);
+}
+
+.skillsList{
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer{
+  margin: 10 auto;
+  text-align: center;
 }
