@@ -1,118 +1,170 @@
 @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+    main{
+        margin: 0 auto;
     }
-    50% {
-      transform: translateY(-25px);
-    }
-  } 
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin: 0 auto;
+  }
+
+  .about-msg {
+    font-size: 1.1rem;
+  }
+
+  .nav-right a {
+    float: none;
+    width: 100%;
+  }
+  .experience-list{
+    display: flex;
+    flex-wrap: wrap;
+    font: .8rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    margin: 0 auto;
+  }
+
+  .experience-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+body {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border: 10px solid black;
+  background-color: #111828;
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.nav-left {
+  display: flex;
+  margin-top: 25px;
+}
+
+img {
+  width: 100px;
+  height: 120px;
+  border-radius: 50px;
+}
+
+.title-name {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-shadow: 0 0 30px rgb(3, 255, 61);
+  animation: bounce 1s infinite ease-in-out;
+  margin-left: 10px;
+}
+
+nav {
+  position: sticky;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #202938;
+  padding: 15px;
+}
+
+.nav-list {
+  color: #75848b;
+}
+
+.nav-right {
+  margin-top: 55px;
+}
+
+.about-msg{
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px;
+  color: #75848b;
   
-body{
-    font-family: "Story Script", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    box-sizing: border-box;
-    margin: 0 auto;
-    border: 10px solid black;
-    background-color: #111828;
 }
 
-main{
-    width: 690px;
-    margin: 0 auto;
+.info-title {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(255, 254, 254);
+  font-size: 35px;
+  padding: 25px;
 }
 
-.nav-left{
-    display: flex;
-    margin-top: 25px;
+.social {
+  display: flex;
 }
 
-img{
-    width: 100px;
-    height: 105px;
-    border-radius: 50px;
+a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: rgb(255, 255, 255);
 }
 
-
-.title-name{
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    text-shadow: 0 0 30px rgb(3, 255, 61);
-    animation: bounce 1s infinite ease-in-out;
-    margin-left: 10px;
+a:hover {
+  text-decoration: underline;
 }
 
-nav{
-    position: sticky;
-    font-size: 25px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #202938;
-    padding: 15px;
+h3 {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
 }
 
-.nav-list{
-    color: #75848b;
+.experience-list {
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.nav-right{
-    margin-top: 55px;
+.exp-1,
+.exp-2,
+.exp-3,
+.exp-4,
+.exp-5,
+.exp-6,
+.exp-7,
+.exp-8 {
+  width: 500px;
 }
 
-p{
-    font-size: 20px;
-    margin: 20px;
-    color: #75848b;
+.connect-msg {
+  text-align: center;
 }
 
-.info-title{
-    text-align: center;
-    text-decoration: underline;
-    color:rgb(255, 254, 254);
-    font-size: 35px;
-    padding: 25px;
+li {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0 auto;
 }
 
-.social{
-    display: flex;
-}
-
-a{
-    text-decoration: none;
-    margin-right: 50px;
-    color: rgb(255, 255, 255);
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-h3{
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-}
-
-.experience-list{
-    font-size: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.exp-1, .exp-2, .exp-3, .exp-4, .exp-5, .exp-6, .exp-7, .exp-8{
-    width: 500px;
-}
-
-.connect-msg{
-    text-align: center;
-}
-
-li{
-    list-style-type:none;
-    font-size: 20px;
-}
-
-i{
-    color: rgb(109, 109, 109);
+i {
+  color: rgb(109, 109, 109);
 }
