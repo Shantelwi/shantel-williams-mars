@@ -38,6 +38,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -188,6 +189,40 @@ i {
   background-color: lightblue;
   padding: 10px;
   border-radius: 10px;
+}
+
+#leave_msg{
+  margin: 0 auto;
+  color: white;
+  font-size: 1.5rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+textarea{
+  width: 300px;
+  height: 100px;
+}
+
+.msg_display{
+  color: white;
+}
+
+button{
+  background-color: lightblue;
+  width: 100px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: darkblue;
+  color: white;
 }
 
 footer{
