@@ -75,3 +75,32 @@ function myFunction(event){
 
    form.reset();
 };
+
+//Creating Fetch
+fetch('https://api.github.com/users/Shantelwi/repos')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Request failed');
+        }
+        return response.json(); // Parse the response as JSON
+    })
+    .then(repositories => {
+        //Do something with the data
+        console.log(repositories);
+
+        //Display Repositories in List
+        const projectSection = document.getElementById('projects');
+        const projectList = projectSection.querySelector('ul');
+
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement('li');
+            project.innerHTML = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.error('An error occurred:', error); //Handling Errors
+    });
+
+    
+
