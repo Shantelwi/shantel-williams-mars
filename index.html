@@ -30,6 +30,7 @@
         <a class="nav-list" href="#skills">Skills</a>
         <a class="nav-list" href="#projects">Projects</a>
         <a class="nav-list" href="#Connect">Connect</a>
+        <a class="nav-list" href="#leave_msg">Contact</a>
       </div>
     </nav>
     
@@ -66,12 +67,13 @@
       </section>
       
       <section id="skills">
-        <h2 class="info-title">Skills</h2>
+          <h2 class="info-title">Skills <i class="fa-brands fa-node-js"></i> <i class="fa-brands fa-css"></i> <i class="fa-solid fa-code"></i> <i class="fa-brands fa-html5"></i> </h2>
+        <ul class="skillsList"></ul>
       </section>
   
       <section id="projects">
         <h2 class="info-title">Projects</h2>
-        <ul></ul>
+        <ul class="project_list"></ul>
       </section>
   
   
@@ -191,8 +193,9 @@
           </div> -->
         </div>
       </section>
-      
-      <footer id="Connect">
+
+      <section id="Connect">
+
         <h2 class="info-title">Connect</h2>
         <p class="connect-msg">Feel free to reach out for projects, collaborations, or just to say hello. </p>
         <ul class="social">
@@ -208,7 +211,31 @@
                 ></a>
               </li>
             </ul>
+      </section>
+
+      <section id="leave_msg">
+        <h2 class="info-title">Leave a Message</h2>
+        <form action="leave_message", name="leave_message">
+          <label for="userName">Name: </label>
+          <input type="text", name="userName", required="true"> <br>
+
+          <label for="userEmail">Email: </label>
+          <input type="email", name="userEmail", required="true"> <br>
+
+          <label for="usersMessage">Message: </label>
+          <textarea name="usersMessage" id="usersMessage" required="true"></textarea> <br>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="messages">
+        <h2 class="info-title">Messages</h2>
+        <ul class="msg_display"></ul>
+      </section>
+
+      <footer>
       </footer>
-      </main>  
+      </main>
+      <script src="js/index.js"></script>
   </body>
 </html>
