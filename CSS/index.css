@@ -234,6 +234,7 @@ li {
 
 i {
   color: rgb(109, 109, 109);
+  animation: bounce 1s infinite ease-in-out;
 }
 
 .skillsList {
