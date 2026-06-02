@@ -1,87 +1,304 @@
 @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-25px);
-    }
-  } 
-  
-body{
-    background-color: rgb(255, 253, 219);
-    font-family: "Story Script", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    box-sizing: border-box;
-    padding: 20px;
-    margin: 0 auto;
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
 }
 
-nav{
+@media screen and (min-width: 1092px) {
+  main {
+    margin: 0 auto;
+  }
+
+  .about-msg {
+    width: 50%;
+  }
+
+  .skillsList {
+    width: 50%;
+  }
+
+  .project_list{
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    margin: 0 auto;
+  }
+
+  .img {
+    width: 50px;
+  }
+
+  nav {
     position: sticky;
-    text-align: center;
-    font-size: 30px;
-}
-
-.title-name{
-    text-align: center;
-    color: seagreen;
-    font-size: 85px;
-    text-shadow: 0 0 30px rgb(0, 239, 0);
-    animation: bounce 1s infinite ease-in-out;
-}
-
-img{
-    width: 200px;
-    margin-top: 20px;
-}
-
-p{
-    font-size: 20px;
-    margin: 20px;
-}
-
-.info-title{
-    text-decoration: underline;
-    color:darkcyan;
-    font-size: 45px;
-}
-
-.social{
+    font-size: 15px;
     display: flex;
-}
+    justify-content: space-between;
+    background-color: #202938;
+    padding: 10px;
+  }
 
-a{
-    text-decoration: none;
-    margin-right: 50px;
-    color: darkslategrey;
-}
+  .nav-right {
+    margin-top: 55px;
+  }
 
-a:hover{
-    text-decoration: underline;
-}
-
-h3{
-    color: seagreen;
-    text-decoration: underline;
-}
-
-.experience-list{
-    font-size: 20px;
-    display: flex;
-    text-align: center;
+  .about-msg {
     margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+
+  .experience-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skillsList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project_list{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
 }
 
-.exp-1, .exp-2, .exp-3, .exp-4, .exp-5, .exp-6, .exp-7, .exp-8{
-    width: 500px;
+
+@media screen and (max-width: 600px) {
+  main {
+    margin: 0 auto;
+  }
+
+  .about-msg {
+    font-size: 1.1rem;
+  }
+
+  .nav-right a {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+
+  .experience-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .8rem;
+    width: 100%;
+  }
+
+  .skillsList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 }
 
-li{
-    list-style-type:none;
-    font-size: 20px;
+
+body {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #111828;
+  /* overflow-x: hidden; */
 }
 
-i{
-    color: black;
+main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.nav-left {
+  display: flex;
+  margin-top: 25px;
+}
+
+img {
+  width: 100px;
+  height: 120px;
+  border-radius: 50px;
+}
+
+.title-name {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-shadow: 0 0 30px rgb(3, 255, 61);
+  animation: bounce 1s infinite ease-in-out;
+  margin-left: 10px;
+}
+
+nav {
+  position: sticky;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #202938;
+  padding: 15px;
+}
+
+.nav-list {
+  color: #75848b;
+}
+
+.nav-right {
+  margin-top: 55px;
+}
+
+.about-msg {
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px;
+  color: #75848b;
+
+}
+
+.info-title {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(255, 254, 254);
+  font-size: 35px;
+  padding: 25px;
+}
+
+.social {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.experience-list {
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.exp-1,
+.exp-2,
+.exp-3,
+.exp-4,
+.exp-5,
+.exp-6,
+.exp-7,
+.exp-8 {
+  width: 500px;
+}
+
+.connect-msg {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+i {
+  color: rgb(109, 109, 109);
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.skillsList {
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.project_list {
+  margin: 0 auto;
+  color: #75848b;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.project_list li {
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+}
+
+
+#leave_msg {
+  margin: 0 auto;
+  color: white;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+}
+
+.msg_display {
+  color: white;
+}
+
+button {
+  background-color: lightblue;
+  width: 100px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+footer {
+  margin: 10 auto;
+  text-align: center;
 }
